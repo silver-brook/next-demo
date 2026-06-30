@@ -43,6 +43,11 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
   - npm i -D eslint eslint-config-next (不需要这个)
   - npm i -D eslint-config-prettier
 - better-auth
+
   - npm install better-auth
   - 创建数据库钩子 npx auth@latest generate
   - 快速更新数据库 npx drizzle-kit push
+- 数据校正 zod
+
+  - npm install zod(不需要这个)
+  - npm install drizzle-zod
