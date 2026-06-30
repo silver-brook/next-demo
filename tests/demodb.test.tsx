@@ -1,11 +1,6 @@
 import { beforeEach, vi } from 'vitest'
 import { describe, expect, test } from 'vitest'
 import { dbInsert, dbSelect } from '@/lib/demo';
-import { SignIN } from '@/components/sign-up';
-import { render } from 'vitest-browser-react';
-import Home from '@/app/page';
-import UserProfile from '@/app/demo/page';
-
 
 const mocks = vi.hoisted(() => ({
   selectMock: vi.fn(),

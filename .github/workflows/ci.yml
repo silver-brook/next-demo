@@ -39,6 +39,9 @@ jobs:
         run: npm run type-check --if-present
 
       # 单元测试（如果有）
+      - name: Playwright Test
+        run: npx playwright install --with-deps chromium 
+        
       - name: Test
         run: npm test --if-present
 
