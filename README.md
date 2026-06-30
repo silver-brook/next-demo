@@ -34,20 +34,24 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
     - npm i -D drizzle-kit @types/pg
   - 快速更新数据库 npx drizzle-kit push
   - 可视化界面 npx drizzle-kit studio
+- 测试框架 vitest
+
+  - npm install -D vitest
+  - npm install -D @vitest/browser-playwright
+  - npm install vitest-browser-react
+  - **npm** install **-D** vite（不是vite，需要安vite，测试才能正常）
+  - npx playwright install 或 npx playwright install chromium（需要浏览器内核）
 
 ## 辅助插件
 
 - eslint相关
-
   - 参考：[https://nextjs.org/docs/app/api-reference/config/eslint](https://nextjs.org/docs/app/api-reference/config/eslint)
   - npm i -D eslint eslint-config-next (不需要这个)
   - npm i -D eslint-config-prettier
 - better-auth
-
   - npm install better-auth
   - 创建数据库钩子 npx auth@latest generate
   - 快速更新数据库 npx drizzle-kit push
 - 数据校正 zod
-
   - npm install zod(不需要这个)
   - npm install drizzle-zod
