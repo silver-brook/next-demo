@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 拉取代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 安装 Node.js
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      # 安装依赖
+      - name: Install dependencies
+        run: npm ci
+
+      # ESLint
+      - name: Run lint
+        run: npm run lint
+
+      # Type Check（如果有）
+      - name: Type Check
+        run: npm run type-check --if-present
+
+      # 单元测试（如果有）
+      - name: Test
+        run: npm test --if-present
+
+      # 构建
+      - name: Build
+        run: npm run build
