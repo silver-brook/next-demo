@@ -25,16 +25,20 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - css
 
   - shadcn/ui
-
     - npx shadcn@latest init -t next
     - 添加 npx shadcn@latest add ***
+- DB:PostgreSQL
 
-
-
+  - orm：Drizzle
+    - npm i drizzle-orm pg
+    - npm i -D drizzle-kit @types/pg
+  - 快速更新数据库 npx drizzle-kit push
+  - 可视化界面 npx drizzle-kit studio
 
 ## 辅助插件
 
 - eslint相关
+
   - 参考：[https://nextjs.org/docs/app/api-reference/config/eslint](https://nextjs.org/docs/app/api-reference/config/eslint)
   - npm i -D eslint eslint-config-next (不需要这个)
   - npm i -D eslint-config-prettier
