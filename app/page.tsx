@@ -1,3 +1,4 @@
+import { SignIN } from "@/components/sign-up";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { db } from "@/db";
 import { demo } from "@/db/schema";
@@ -18,6 +19,7 @@ export default async function Home() {
           return <div key={key}>Getting all users from the database: {itme.name}</div>
         })
       }
+      <SignIN></SignIN>
       <div className="fixed top-0 right-0 ">
         <div className="grid   w-full max-w-md items-start gap-4">
           <Alert className="">
