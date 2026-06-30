@@ -22,6 +22,13 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## 技术栈
 
+- css
+
+  - shadcn/ui
+
+    - npx shadcn@latest init -t next
+    - 添加 npx shadcn@latest add ***
+
 
 
 
