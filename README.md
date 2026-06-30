@@ -40,7 +40,11 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
   - npm install -D @vitest/browser-playwright
   - npm install vitest-browser-react
   - **npm** install **-D** vite（不是vite，需要安vite，测试才能正常）
-  - npx playwright install 或 npx playwright install chromium（需要浏览器内核）
+  - npx playwright install （需要浏览器内核）
+- TRPC
+
+  - npm install @trpc/server @trpc/client
+  - 一键生成 npx create-trpc-setup
 
 ## 辅助插件
 
